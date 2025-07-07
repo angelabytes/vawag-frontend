@@ -1,10 +1,7 @@
 import React from "react";
-import ArticleCard from "../components/article/ArticleCard"; // Verify the path to your ArticleCard component
+import ArticleCard from "../components/article/ArticleCard";
 
 function EducationPage() {
-  // Data for the History article card
-  // This data should either match the articleData from History.jsx
-  // or be a curated set of key info specifically for the card display.
   const historyArticleCardData = {
     title: "Colonialism and Tourism",
     description:
