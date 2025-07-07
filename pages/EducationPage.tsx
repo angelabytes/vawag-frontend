@@ -6,11 +6,11 @@ function EducationPage() {
   // This data should either match the articleData from History.jsx
   // or be a curated set of key info specifically for the card display.
   const historyArticleCardData = {
-    title: "Colonialism's role in violence",
+    title: "Colonialism and Tourism",
     description:
       "The overthrow of Hawaii has a lasting effect on the Native Hawaiian people and the 'āina. This article explores colonialism's role in violence and its historical impact.",
     imageUrl: "/public/assets/history_hero/Onipaa_annexation_UH_Manoa.gif",
-    author: "Angela Ellis",
+    author: "Angela",
     date: "July 7, 2024",
     link: "/history-article",
     category: "History",

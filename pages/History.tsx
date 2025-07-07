@@ -5,10 +5,10 @@ function History() {
   const articleData = {
     title: "Colonialism and Tourismʻs Role in Violence Against Women",
     subtitle: "",
-    author: "Angela Ellis",
+    author: "Angela",
     date: "July 7, 2024",
     heroImage: {
-      src: "assets/history_hero/Onipaa_annexation_UH_Manoa.gif",
+      src: "/assets/history_hero/Onipaa_annexation_UH_Manoa.gif",
       alt: "Overthrow of Hawaiian Monarchy",
     },
     content: `The overthrow of Hawai'i has a lasting effect. Not just in how the ʻāina is thrown away and not taken care for,
@@ -27,8 +27,14 @@ This abuse and violence towards women is still prevalent today -- especially amo
 This sentiment is also brought up in Part II Sex Trafficking in Hawaiʻi: The Stories of Survivors, citing the overthrow of the Hawaiʻi and may have a direct correlation
 due to the 'hypersexualization, racism, cultural discointer-generational trauma suffered under western governance.
 
-With colonialism came tourism. 'Come see the exotic beauty' was the theme of many past ads for Hawaiʻi, i.e. the Exotic Haena Bali Haʻi ad.  
-> 
+In Genuine security for whom?: Militourism and violence against the feminine in Hawaiʻi and Asia and the Pacific, Cristobal states that paradise is an foreign construct to Hawaiʻi brought by American and
+European settlers. The first prostitute on record was an 8-year-old girl named "Polly" who had a Native Hawaiian mother and a European father. Luckily she was able to escape.
+
+With colonialism came tourism. 'Come see the exotic beauty' was the theme of many past ads for Hawaiʻi, i.e. the Exotic Haena Bali Haʻi ad. Cristobal claims in Genuine Security for Whom?: Militourism and Violence Against the Feminine in Hawai‘i and Asia and the Pacific, that the U.S. military
+is used as a way to promote toursim and is problematic. Surrounding the bases are places like "massage parlors, bars and hotels effectively serves as modern day brothels". This is an on going problem and like the past
+many of the trafficked victims are children.
+
+
 `,
     category: "History",
     tags: ["colonialism", "tourism"],
