@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@theme {
+  /*fonts*/
+  --font-courgette: "Courgette", cursive;
+  --font-libre-baskerville: "Libre Baskerville", serif;
+  --font-roboto-mono: "Roboto mono", sans-serif;
+
+  /*colors*/
+  --sage-green: #9caf88;
+  --outback: #d4a574;
+  --cream: #f7f3e9;
+  --pastel-pink: #d4a5a5;
+  --lavendar: #c8b5d1;
+  --umber: #8b8680;
+  --sand: #e8d5b7;
+  --deep-sage: #7a8b6b;
+
+  /* RGB variants for gradients with opacity */
+  --umber-rgb: 139, 134, 128;
+  --outback-rgb: 212, 165, 116;
+  --cream-rgb: 247, 243, 233;
+  --sage-green-rgb: 156, 175, 136; /* ADD THIS ONE */
+  --pastel-pink-rgb: 212, 165, 165; /* ADD THIS ONE */
+  --lavendar-rgb: 200, 181, 209;
+  --sand-rgb: 232, 213, 183;
+  --deep-sage-rgb: 122, 139, 107;
+}
+
+/* ... rest of your index.css ... */
+
+#root {
+  /* margin: 0 auto;
+  padding: 1rem; */
+  text-align: center;
+  color: white;
+}
+
+.card {
+  padding: 2em;
+}
+
+@media (min-width: 780px) {
+  /* #root {
+    max-width: 1280px;
+    padding: 2rem;
+  } */
+}
