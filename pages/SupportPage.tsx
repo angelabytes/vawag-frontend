@@ -1,6 +1,9 @@
-import ResourceCard from "../components/support/SupportCard";
-export default function SupportPage() {
-  const mainPoliceCardData = {
+import SupportCard, {
+  type SupportCardProps,
+} from "../components/support/SupportCard";
+
+const supportData: SupportCardProps[] = [
+  {
     organization: "Honolulu Police Department",
     description: "Main Number",
     imageUrl: "",
@@ -8,9 +11,9 @@ export default function SupportPage() {
     phoneNumber: "(808)529-3111",
     address: "",
     icon: { name: "shield", size: 45, color: "blue" },
-  };
+  },
 
-  const detectiveDivisionCardData = {
+  {
     organization: "HPD Detective/ Criminal Investigation Division",
     description: "",
     imageUrl: "",
@@ -18,8 +21,10 @@ export default function SupportPage() {
     phoneNumber: "(808)723-3609",
     address: "",
     icon: { name: "shield", size: 45, color: "blue" },
-  };
+  },
+];
 
+export default function SupportPage() {
   return (
     <div className="mt-4">
       <h1 className="text-gray-800">
@@ -31,8 +36,9 @@ export default function SupportPage() {
       </h1>
       <section>
         <div className="grid grid-cols-4 grid-auto-rows-fr gap-10">
-          <ResourceCard {...mainPoliceCardData} />
-          <ResourceCard {...detectiveDivisionCardData} />
+          {supportData.map((card) => (
+            <SupportCard key={card.organization} {...card} />
+          ))}
         </div>
       </section>
     </div>

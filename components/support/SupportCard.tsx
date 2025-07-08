@@ -6,7 +6,7 @@ interface DynamicIconProps {
   color: string;
 }
 
-interface SupportCardProps {
+export interface SupportCardProps {
   organization: string;
   description: string;
   imageUrl: string;
