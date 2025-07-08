@@ -1,5 +1,20 @@
 import { DynamicIcon } from "lucide-react/dynamic";
-const ResourceCard = ({
+interface DynamicIconProps {
+  name: string;
+  size: number;
+  color: string;
+}
+
+interface SupportCardProps {
+  organization: string;
+  description: string;
+  imageUrl: string;
+  link: string;
+  phoneNumber: string;
+  address: string;
+  icon: DynamicIconProps;
+}
+const SupportCard = ({
   organization,
   description,
   imageUrl,
@@ -7,7 +22,7 @@ const ResourceCard = ({
   phoneNumber,
   address,
   icon,
-}) => {
+}: SupportCardProps) => {
   return (
     <a
       href={link}
@@ -54,4 +69,4 @@ const ResourceCard = ({
   );
 };
 
-export default ResourceCard;
+export default SupportCard;
