@@ -1,7 +1,6 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import Menu from "./components/navigation/index"; // Adjust path if needed
-import Footer from "./components/Footer"; // Adjust path if needed
+import Footer from "./components/footer/index"; // Adjust path if needed
 
 export default function Layout() {
   return (
