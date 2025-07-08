@@ -5,7 +5,7 @@ function EducationPage() {
     title: "Colonialism and Tourism",
     description:
       "The overthrow of Hawaii has a lasting effect on the Native Hawaiian people and the 'āina. This article explores colonialism's role in violence and its historical impact.",
-    imageUrl: "/public/assets/history_hero/Onipaa_annexation_UH_Manoa.gif",
+    imageUrl: "/assets/history_hero/Onipaa_annexation_UH_Manoa.gif",
     author: "Angela",
     date: "July 7, 2024",
     link: "/history-article",

@@ -1,6 +1,7 @@
 import { DynamicIcon } from "lucide-react/dynamic";
+import { type IconName } from "lucide-react/dynamic";
 interface DynamicIconProps {
-  name: string;
+  name: IconName;
   size: number;
   color: string;
 }

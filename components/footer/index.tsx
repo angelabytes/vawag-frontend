@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function HFooter() {
   return (
     <footer className="w-full bg-[linear-gradient(45deg,var(--sage-green),var(--deep-sage))] text-white p-8 text-center shadow-inner">
