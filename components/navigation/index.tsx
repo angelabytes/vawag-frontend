@@ -59,7 +59,6 @@ export default function Menu() {
 
         {/* Column 4: Search Bar - Right Side */}
         <div className="flex items-center justify-end">
-          {/* Desktop Search Bar (now always visible) */}
           <div className="relative">
             <div
               className="absolute inset-y-0 start-0 flex items-center ps-3
