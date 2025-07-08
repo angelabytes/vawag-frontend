@@ -1,4 +1,3 @@
-import React from "react";
 import ArticleTemplate from "../components/article/ArticleTemplate";
 
 function History() {
@@ -38,6 +37,7 @@ many of the trafficked victims are children.
 `,
     category: "History",
     tags: ["colonialism", "tourism"],
+    relatedArticles: [],
   };
   return (
     <div>
