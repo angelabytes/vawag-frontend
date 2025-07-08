@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import ResourcesPage from "../pages/ResourcesPage";
 import EducationPage from "../pages/EducationPage";
 import History from "../pages/History";
+import SupportPage from "../pages/SupportPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/resources" element={<ResourcesPage />} />
         <Route path="/education" element={<EducationPage />} />
         <Route path="/history-article" element={<History />}></Route>
+        <Route path="/support" element={<SupportPage />}></Route>
       </Route>
     </Routes>
   );

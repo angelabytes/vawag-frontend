@@ -1,4 +1,3 @@
-import React from "react";
 import ArticleCard from "../components/article/ArticleCard";
 
 function EducationPage() {

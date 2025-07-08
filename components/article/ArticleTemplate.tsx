@@ -1,5 +1,29 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+
+interface heroImageProps {
+  src: string;
+  alt: string;
+}
+
+interface relatedArticlesProps {
+  link: string;
+  title: string;
+  description: string;
+}
+
+interface ArticleProps {
+  title: string;
+  subtitle: string;
+  author: string;
+  date: string;
+  heroImage: heroImageProps;
+  content: string;
+  category: string;
+  tags: string[];
+  relatedArticles: relatedArticlesProps[];
+}
+
 const ArticleTemplate = ({
   title,
   subtitle,
@@ -10,7 +34,7 @@ const ArticleTemplate = ({
   category,
   tags,
   relatedArticles,
-}) => {
+}: ArticleProps) => {
   return (
     <div className="container mx-auto p-4 md:p-8 max-w-4xl font-sans">
       {/* Hero Section: Image and Title */}
@@ -47,12 +71,10 @@ const ArticleTemplate = ({
         </div>
         <hr className="my-6 border-t-2 border-gray-200" />
       </article>
-
       {/* Main Content */}
       <article className="prose prose-lg max-w-none text-gray-800 leading-relaxed">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </article>
-
       {/* Tags Section */}
       {tags && tags.length > 0 && (
         <section className="mt-10 pt-6 border-t border-gray-200">
@@ -71,8 +93,7 @@ const ArticleTemplate = ({
           </div>
         </section>
       )}
-
-      {/* Related Articles
+      Related Articles
       {relatedArticles && relatedArticles.length > 0 && (
         <section className="mt-10 pt-6 border-t border-gray-200">
           <h3 className="text-lg font-bold text-gray-700 mb-4">
@@ -93,7 +114,7 @@ const ArticleTemplate = ({
             ))}
           </div>
         </section>
-      )} */}
+      )}
     </div>
   );
 };

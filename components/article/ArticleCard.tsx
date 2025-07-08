@@ -1,4 +1,12 @@
-import React from "react";
+interface ArticleCardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  author: string;
+  date: string;
+  link: string;
+  category: string;
+}
 
 const ArticleCard = ({
   title,
@@ -8,7 +16,7 @@ const ArticleCard = ({
   date,
   link,
   category,
-}) => {
+}: ArticleCardProps) => {
   return (
     <a
       href={link}
